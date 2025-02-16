@@ -53,3 +53,10 @@ closeAlert.addEventListener('click', () => {
     alertBox.classList.remove('block');
     alertBox.classList.add('hidden');
 });
+
+// Mencegah scroll ke atas
+kirimBtn.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    alertBox.classList.remove('hidden');
+    alertBox.classList.add('flex');
+  });
